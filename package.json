@@ -4,7 +4,9 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "npm i && webpack-dev-server"
+    "start": "npm i && webpack-dev-server",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "backand",
@@ -30,6 +32,8 @@
     "react-dom": "0.14.7",
     "react-redux": "4.4.1",
     "redux": "3.3.1",
-    "superagent": "1.8.3"
-  }
+    "superagent": "1.8.3",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
